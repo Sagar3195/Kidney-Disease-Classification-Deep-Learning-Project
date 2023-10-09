@@ -16,4 +16,10 @@
 MLFLOW_TRACKING_URI=https://dagshub.com/saggyd95/Kidney-Disease-Classification-Deep-Learning-Project.mlflow \
 MLFLOW_TRACKING_USERNAME=saggyd95 \
 MLFLOW_TRACKING_PASSWORD=bc08e4727e5255fdd03bbba5cc5cbca38a02e28c \
-python script.py
+python script.py 
+
+
+#### DVC cmd
+ 1. dvc init
+ 2. dvc repro
+ 3. dvc dag
