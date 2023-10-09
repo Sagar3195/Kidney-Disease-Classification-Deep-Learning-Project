@@ -21,9 +21,9 @@ class PredictionPipeline:
 
 
         if result[0] == 1:
-            prediction = "Not Healthy"
+            prediction = "Tumor"
             return [{"image" : prediction}]
         else:
-            prediction = "Healthy"
+            prediction = "Normal"
             return [{"image" : prediction}]
 

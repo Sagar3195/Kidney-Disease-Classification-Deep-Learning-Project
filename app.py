@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template 
 from flask_cors import CORS, cross_origin 
-from src.cnnClassifier.utils.common import decodeImage 
-from src.cnnClassifier.pipeline.prediction import PredictionPipeline 
+from cnnClassifier.utils.common import decodeImage 
+from cnnClassifier.pipeline.prediction import PredictionPipeline 
 import os
 
 
@@ -26,6 +26,7 @@ def home():
 @cross_origin()
 def trainRoute():
     os.system("python main.py")
+    # os.system("dvc.repro")
     return "Training done successfully"
 
 @app.route("/predict", methods= ["POST"])
